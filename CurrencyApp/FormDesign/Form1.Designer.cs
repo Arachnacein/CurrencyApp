@@ -276,7 +276,7 @@
             this.Name = "Form1";
             this.Text = "Currency App";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.DoubleClick += new System.EventHandler(this.Refresh);
+            this.DoubleClick += new System.EventHandler(this.RefreshContent);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEU)).EndInit();

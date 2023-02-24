@@ -1,27 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CurrencyApp.Logic;
+using System;
 using System.Windows.Forms;
+using static CurrencyApp.Logic.Const.ConstValues;
 
 namespace CurrencyApp
 {
     public partial class Form1 : Form
     {
-        private const string GOLD = "XAU";
-        private const string SILVER = "XAG";
-
-        private const string USD = "USD";
-        private const string PLN = "PLN";
-        private const string EUR = "EUR";
-        private const string NOK = "NOK";
-        private const string GBP = "GBP";
-
-
         public Form1()
         {
             InitializeComponent();
@@ -29,8 +14,19 @@ namespace CurrencyApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            RefreshData();
+        }
+
+        private void RefreshContent(object sender, EventArgs e)
+        {
+            RefreshData();
+        }
+
+        private void RefreshData()
+        {
+
             //Load metal data section
-            GetMetalData metal = new GetMetalData();
+            Service metal = new Service();
             labelGoldValuePLN.Text = metal.GetMetalValue(PLN, GOLD);
             labelGoldValueUSD.Text = metal.GetMetalValue(USD, GOLD);
             labelSilverValuePLN.Text = metal.GetMetalValue(PLN, SILVER);
@@ -38,18 +34,11 @@ namespace CurrencyApp
             labelGold_SilverRatioValue.Text = metal.GetMetalValue(SILVER, GOLD);
 
             //Load currency data section
-            GetCurrencyData currency = new GetCurrencyData();
+            Service currency = new Service();
             labelValueDollar.Text = currency.GetCurrencyValue(USD);
             labelValueEuro.Text = currency.GetCurrencyValue(EUR);
             labelValuePound.Text = currency.GetCurrencyValue(GBP);
             labelValueNOK.Text = currency.GetCurrencyValue(NOK);
-
-
-        }
-
-        private void Refresh(object sender, EventArgs e)
-        {
-            Form1_Load(sender, e);
         }
     }
 }
