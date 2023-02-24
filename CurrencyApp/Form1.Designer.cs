@@ -37,9 +37,9 @@ namespace CurrencyApp
             this.labelSilverValuePLN = new System.Windows.Forms.Label();
             this.labelPLN = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.labelSilverValueDollar = new System.Windows.Forms.Label();
-            this.labelGoldValueDollar = new System.Windows.Forms.Label();
-            this.labelGsRatioValue = new System.Windows.Forms.Label();
+            this.labelSilverValueUSD = new System.Windows.Forms.Label();
+            this.labelGoldValueUSD = new System.Windows.Forms.Label();
+            this.labelGold_SilverRatioValue = new System.Windows.Forms.Label();
             this.pictureBoxUS = new System.Windows.Forms.PictureBox();
             this.pictureBoxUK = new System.Windows.Forms.PictureBox();
             this.pictureBoxEU = new System.Windows.Forms.PictureBox();
@@ -48,6 +48,7 @@ namespace CurrencyApp
             this.labelValuePound = new System.Windows.Forms.Label();
             this.labelValueEuro = new System.Windows.Forms.Label();
             this.labelValueNOK = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEU)).BeginInit();
@@ -86,77 +87,76 @@ namespace CurrencyApp
             this.labelGsRatio.TabIndex = 2;
             this.labelGsRatio.Text = "G/S Ratio";
             this.labelGsRatio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelGsRatio.Click += new System.EventHandler(this.labelGsRatio_Click);
             // 
             // labelGoldValuePLN
             // 
             this.labelGoldValuePLN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelGoldValuePLN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelGoldValuePLN.Location = new System.Drawing.Point(100, 43);
+            this.labelGoldValuePLN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelGoldValuePLN.Location = new System.Drawing.Point(86, 44);
             this.labelGoldValuePLN.Name = "labelGoldValuePLN";
-            this.labelGoldValuePLN.Size = new System.Drawing.Size(65, 30);
+            this.labelGoldValuePLN.Size = new System.Drawing.Size(92, 30);
             this.labelGoldValuePLN.TabIndex = 3;
             this.labelGoldValuePLN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelSilverValuePLN
             // 
             this.labelSilverValuePLN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelSilverValuePLN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelSilverValuePLN.Location = new System.Drawing.Point(100, 80);
+            this.labelSilverValuePLN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelSilverValuePLN.Location = new System.Drawing.Point(86, 81);
             this.labelSilverValuePLN.Name = "labelSilverValuePLN";
-            this.labelSilverValuePLN.Size = new System.Drawing.Size(65, 30);
+            this.labelSilverValuePLN.Size = new System.Drawing.Size(92, 30);
             this.labelSilverValuePLN.TabIndex = 4;
             this.labelSilverValuePLN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelPLN
             // 
             this.labelPLN.AutoSize = true;
-            this.labelPLN.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelPLN.Location = new System.Drawing.Point(113, 9);
+            this.labelPLN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelPLN.Location = new System.Drawing.Point(125, 14);
             this.labelPLN.Name = "labelPLN";
-            this.labelPLN.Size = new System.Drawing.Size(31, 13);
+            this.labelPLN.Size = new System.Drawing.Size(34, 15);
             this.labelPLN.TabIndex = 5;
             this.labelPLN.Text = "PLN";
-            this.labelPLN.Click += new System.EventHandler(this.labelPLN_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(194, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(217, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 20);
+            this.label1.Size = new System.Drawing.Size(36, 15);
             this.label1.TabIndex = 8;
-            this.label1.Text = "$";
+            this.label1.Text = "USD";
             // 
-            // labelSilverValueDollar
+            // labelSilverValueUSD
             // 
-            this.labelSilverValueDollar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelSilverValueDollar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelSilverValueDollar.Location = new System.Drawing.Point(171, 80);
-            this.labelSilverValueDollar.Name = "labelSilverValueDollar";
-            this.labelSilverValueDollar.Size = new System.Drawing.Size(65, 30);
-            this.labelSilverValueDollar.TabIndex = 7;
-            this.labelSilverValueDollar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSilverValueUSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelSilverValueUSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelSilverValueUSD.Location = new System.Drawing.Point(184, 80);
+            this.labelSilverValueUSD.Name = "labelSilverValueUSD";
+            this.labelSilverValueUSD.Size = new System.Drawing.Size(92, 30);
+            this.labelSilverValueUSD.TabIndex = 7;
+            this.labelSilverValueUSD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelGoldValueDollar
+            // labelGoldValueUSD
             // 
-            this.labelGoldValueDollar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelGoldValueDollar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelGoldValueDollar.Location = new System.Drawing.Point(171, 43);
-            this.labelGoldValueDollar.Name = "labelGoldValueDollar";
-            this.labelGoldValueDollar.Size = new System.Drawing.Size(65, 30);
-            this.labelGoldValueDollar.TabIndex = 6;
-            this.labelGoldValueDollar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelGoldValueUSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelGoldValueUSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelGoldValueUSD.Location = new System.Drawing.Point(184, 43);
+            this.labelGoldValueUSD.Name = "labelGoldValueUSD";
+            this.labelGoldValueUSD.Size = new System.Drawing.Size(92, 30);
+            this.labelGoldValueUSD.TabIndex = 6;
+            this.labelGoldValueUSD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelGsRatioValue
+            // labelGold_SilverRatioValue
             // 
-            this.labelGsRatioValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelGsRatioValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelGsRatioValue.Location = new System.Drawing.Point(100, 120);
-            this.labelGsRatioValue.Name = "labelGsRatioValue";
-            this.labelGsRatioValue.Size = new System.Drawing.Size(136, 30);
-            this.labelGsRatioValue.TabIndex = 9;
+            this.labelGold_SilverRatioValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelGold_SilverRatioValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelGold_SilverRatioValue.Location = new System.Drawing.Point(100, 124);
+            this.labelGold_SilverRatioValue.Name = "labelGold_SilverRatioValue";
+            this.labelGold_SilverRatioValue.Size = new System.Drawing.Size(176, 30);
+            this.labelGold_SilverRatioValue.TabIndex = 9;
+            this.labelGold_SilverRatioValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBoxUS
             // 
@@ -171,7 +171,7 @@ namespace CurrencyApp
             // pictureBoxUK
             // 
             this.pictureBoxUK.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUK.Image")));
-            this.pictureBoxUK.Location = new System.Drawing.Point(72, 162);
+            this.pictureBoxUK.Location = new System.Drawing.Point(220, 200);
             this.pictureBoxUK.Name = "pictureBoxUK";
             this.pictureBoxUK.Size = new System.Drawing.Size(50, 30);
             this.pictureBoxUK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -181,7 +181,7 @@ namespace CurrencyApp
             // pictureBoxEU
             // 
             this.pictureBoxEU.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxEU.Image")));
-            this.pictureBoxEU.Location = new System.Drawing.Point(128, 162);
+            this.pictureBoxEU.Location = new System.Drawing.Point(16, 200);
             this.pictureBoxEU.Name = "pictureBoxEU";
             this.pictureBoxEU.Size = new System.Drawing.Size(50, 30);
             this.pictureBoxEU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -191,7 +191,7 @@ namespace CurrencyApp
             // pictureBoxNOK
             // 
             this.pictureBoxNOK.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxNOK.Image")));
-            this.pictureBoxNOK.Location = new System.Drawing.Point(184, 162);
+            this.pictureBoxNOK.Location = new System.Drawing.Point(220, 162);
             this.pictureBoxNOK.Name = "pictureBoxNOK";
             this.pictureBoxNOK.Size = new System.Drawing.Size(50, 30);
             this.pictureBoxNOK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -201,45 +201,59 @@ namespace CurrencyApp
             // labelValueDollar
             // 
             this.labelValueDollar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelValueDollar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelValueDollar.Location = new System.Drawing.Point(16, 200);
+            this.labelValueDollar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelValueDollar.Location = new System.Drawing.Point(72, 162);
             this.labelValueDollar.Name = "labelValueDollar";
-            this.labelValueDollar.Size = new System.Drawing.Size(50, 30);
+            this.labelValueDollar.Size = new System.Drawing.Size(62, 30);
             this.labelValueDollar.TabIndex = 14;
+            this.labelValueDollar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelValuePound
             // 
             this.labelValuePound.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelValuePound.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelValuePound.Location = new System.Drawing.Point(72, 200);
+            this.labelValuePound.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelValuePound.Location = new System.Drawing.Point(152, 200);
             this.labelValuePound.Name = "labelValuePound";
-            this.labelValuePound.Size = new System.Drawing.Size(50, 30);
+            this.labelValuePound.Size = new System.Drawing.Size(62, 30);
             this.labelValuePound.TabIndex = 15;
+            this.labelValuePound.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelValueEuro
             // 
             this.labelValueEuro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelValueEuro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelValueEuro.Location = new System.Drawing.Point(128, 200);
+            this.labelValueEuro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelValueEuro.Location = new System.Drawing.Point(72, 200);
             this.labelValueEuro.Name = "labelValueEuro";
-            this.labelValueEuro.Size = new System.Drawing.Size(50, 30);
+            this.labelValueEuro.Size = new System.Drawing.Size(62, 30);
             this.labelValueEuro.TabIndex = 16;
+            this.labelValueEuro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelValueNOK
             // 
             this.labelValueNOK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelValueNOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelValueNOK.Location = new System.Drawing.Point(184, 200);
+            this.labelValueNOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelValueNOK.Location = new System.Drawing.Point(152, 162);
             this.labelValueNOK.Name = "labelValueNOK";
-            this.labelValueNOK.Size = new System.Drawing.Size(50, 30);
+            this.labelValueNOK.Size = new System.Drawing.Size(62, 30);
             this.labelValueNOK.TabIndex = 17;
+            this.labelValueNOK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(210, 237);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "by Jakub Łuka";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(252, 242);
+            this.ClientSize = new System.Drawing.Size(292, 252);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.labelValueNOK);
             this.Controls.Add(this.labelValueEuro);
             this.Controls.Add(this.labelValuePound);
@@ -248,18 +262,22 @@ namespace CurrencyApp
             this.Controls.Add(this.pictureBoxEU);
             this.Controls.Add(this.pictureBoxUK);
             this.Controls.Add(this.pictureBoxUS);
-            this.Controls.Add(this.labelGsRatioValue);
+            this.Controls.Add(this.labelGold_SilverRatioValue);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.labelSilverValueDollar);
-            this.Controls.Add(this.labelGoldValueDollar);
+            this.Controls.Add(this.labelSilverValueUSD);
+            this.Controls.Add(this.labelGoldValueUSD);
             this.Controls.Add(this.labelPLN);
             this.Controls.Add(this.labelSilverValuePLN);
             this.Controls.Add(this.labelGoldValuePLN);
             this.Controls.Add(this.labelGsRatio);
             this.Controls.Add(this.labelSilver);
             this.Controls.Add(this.labelGold);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Currency App";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.DoubleClick += new System.EventHandler(this.Refresh);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEU)).EndInit();
@@ -278,9 +296,9 @@ namespace CurrencyApp
         private System.Windows.Forms.Label labelSilverValuePLN;
         private System.Windows.Forms.Label labelPLN;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label labelSilverValueDollar;
-        private System.Windows.Forms.Label labelGoldValueDollar;
-        private System.Windows.Forms.Label labelGsRatioValue;
+        private System.Windows.Forms.Label labelSilverValueUSD;
+        private System.Windows.Forms.Label labelGoldValueUSD;
+        private System.Windows.Forms.Label labelGold_SilverRatioValue;
         private System.Windows.Forms.PictureBox pictureBoxUS;
         private System.Windows.Forms.PictureBox pictureBoxUK;
         private System.Windows.Forms.PictureBox pictureBoxEU;
@@ -289,6 +307,7 @@ namespace CurrencyApp
         private System.Windows.Forms.Label labelValuePound;
         private System.Windows.Forms.Label labelValueEuro;
         private System.Windows.Forms.Label labelValueNOK;
+        private System.Windows.Forms.Label label2;
     }
 }
 
