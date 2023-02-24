@@ -1,5 +1,4 @@
-﻿
-namespace CurrencyApp
+﻿namespace CurrencyApp
 {
     partial class Form1
     {
