@@ -21,7 +21,6 @@
         public const string currencyApiKey = "q2FW7V6hs3chCe2n4Z0ZLoej75C1NyY3";
         public const string currencySourceSiteUrl = "https://api.apilayer.com/exchangerates_data/latest?symbols=";
 
-        //final urls
 
 
     }

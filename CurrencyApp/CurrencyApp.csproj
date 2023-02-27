@@ -92,6 +92,7 @@
     <Compile Include="Const\ConstValues.cs" />
     <Compile Include="Logic\Factoria.cs" />
     <Compile Include="Logic\Service.cs" />
+    <Compile Include="Models\MetalModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormDesign\Form1.resx">
