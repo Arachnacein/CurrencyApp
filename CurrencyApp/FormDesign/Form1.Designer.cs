@@ -131,7 +131,7 @@
             // 
             this.labelSilverValueUSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelSilverValueUSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelSilverValueUSD.Location = new System.Drawing.Point(184, 80);
+            this.labelSilverValueUSD.Location = new System.Drawing.Point(184, 81);
             this.labelSilverValueUSD.Name = "labelSilverValueUSD";
             this.labelSilverValueUSD.Size = new System.Drawing.Size(92, 30);
             this.labelSilverValueUSD.TabIndex = 7;
@@ -141,7 +141,7 @@
             // 
             this.labelGoldValueUSD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelGoldValueUSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelGoldValueUSD.Location = new System.Drawing.Point(184, 43);
+            this.labelGoldValueUSD.Location = new System.Drawing.Point(184, 44);
             this.labelGoldValueUSD.Name = "labelGoldValueUSD";
             this.labelGoldValueUSD.Size = new System.Drawing.Size(92, 30);
             this.labelGoldValueUSD.TabIndex = 6;

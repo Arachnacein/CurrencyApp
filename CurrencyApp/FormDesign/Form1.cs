@@ -24,21 +24,17 @@ namespace CurrencyApp
 
         private void RefreshData()
         {
+            Service obj = new Service();
+            labelGoldValuePLN.Text = obj.GetMetalValue(PLN, GOLD);
+            labelGoldValueUSD.Text = obj.GetMetalValue(USD, GOLD);
+            labelSilverValuePLN.Text = obj.GetMetalValue(PLN, SILVER);
+            labelSilverValueUSD.Text = obj.GetMetalValue(USD, SILVER);
+            labelGold_SilverRatioValue.Text = obj.GetGoldSiverRatio(labelGoldValuePLN.Text, labelSilverValuePLN.Text).ToString();
 
-            //Load metal data section
-            Service metal = new Service();
-            labelGoldValuePLN.Text = metal.GetMetalValue(PLN, GOLD);
-            labelGoldValueUSD.Text = metal.GetMetalValue(USD, GOLD);
-            labelSilverValuePLN.Text = metal.GetMetalValue(PLN, SILVER);
-            labelSilverValueUSD.Text = metal.GetMetalValue(USD, SILVER);
-            labelGold_SilverRatioValue.Text = metal.GetMetalValue(SILVER, GOLD);
-
-            //Load currency data section
-            Service currency = new Service();
-            labelValueDollar.Text = currency.GetCurrencyValue(USD);
-            labelValueEuro.Text = currency.GetCurrencyValue(EUR);
-            labelValuePound.Text = currency.GetCurrencyValue(GBP);
-            labelValueNOK.Text = currency.GetCurrencyValue(NOK);
+            labelValueDollar.Text = obj.GetCurrencyValue(USD);
+            labelValueEuro.Text = obj.GetCurrencyValue(EUR);
+            labelValuePound.Text = obj.GetCurrencyValue(GBP);
+            labelValueNOK.Text = obj.GetCurrencyValue(NOK);
         }
     }
 }
