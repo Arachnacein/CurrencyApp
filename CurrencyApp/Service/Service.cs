@@ -9,7 +9,7 @@ namespace CurrencyApp.Logic
     {
         public string GetCurrencyValue(string currency)
         {
-            string fullUrlCurrency = currencySourceSiteUrl + "PLN&base=" + currency;
+            string fullUrlCurrency = currencySourceSiteUrl + currency;
             try
             {
                 Factoria factoria = new Factoria();
@@ -51,8 +51,8 @@ namespace CurrencyApp.Logic
         {
             if (!goldRate.Equals("Error") && !silverRate.Equals("Error"))
             {
-                double parsedGoldRate = Double.Parse(goldRate);
-                double parsedSIlverRate = Double.Parse(silverRate);
+                double parsedGoldRate = Double.Parse(goldRate.Replace(".",","));
+                double parsedSIlverRate = Double.Parse(silverRate.Replace(".", ","));
                 return Math.Round(parsedGoldRate / parsedSIlverRate, 2).ToString();
             }
             return "Error";
