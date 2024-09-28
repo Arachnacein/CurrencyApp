@@ -35,6 +35,8 @@ namespace CurrencyApp
             labelValueEuro.Text = obj.GetCurrencyValue(EUR);
             labelValuePound.Text = obj.GetCurrencyValue(GBP);
             labelValueNOK.Text = obj.GetCurrencyValue(NOK);
+
+            labelDate.Text = obj.GetCurrentDate();
         }
     }
 }
