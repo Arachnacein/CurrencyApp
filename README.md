@@ -1,4 +1,11 @@
-<h1 align="center">CurrencyApp</h1><br>
+<h1 align="center">
+  <img src="https://github.com/user-attachments/assets/49aa05a4-8211-4b44-bebd-632bab4e1507">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  CurrencyApp 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/49aa05a4-8211-4b44-bebd-632bab4e1507">
+</h1><br>
+
 
 <p align="center">
   CurrencyApp is a simple application that displays the current price of gold and silver in PLN and $.<br>
@@ -12,16 +19,16 @@
 
 <hr><br>
 
-<p style="text-ident:30px;">
-  I used in my project goldapi.io API (www.goldapi.io). The query according to the documentation should contain the type of the method (GET), the url to the resource we want to receive and the header 'x-access-token', which is our secret api key. As on the picture below.
+<p>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I used in my project goldapi.io API (www.goldapi.io). The query according to the documentation should contain the type of the method (GET), the url to the resource we want to receive and the header 'x-access-token', which is our secret api key. As on the picture below.
 </p>
 
 <p align="center">
     <img src="https://github.com/user-attachments/assets/b04a7cde-09ef-4347-9cca-188bb9e14c61"><br><br>
 </p
 
-<p style="text-ident:30px;">
-    In response we get JSON as below. Instead of creating a model according to it I used <dynamic> option specifying ["price"] because only this property was needed .
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In response we get JSON as below. Instead of creating a model according to it I used &lt;dynamic&gt; option during deserialization specifying ["price"] because only this property was needed .
 </p>
       
 <p align="center">
