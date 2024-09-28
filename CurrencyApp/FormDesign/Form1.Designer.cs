@@ -270,12 +270,12 @@
             // labelDate
             // 
             this.labelDate.AutoSize = true;
-            this.labelDate.Location = new System.Drawing.Point(104, 359);
+            this.labelDate.Location = new System.Drawing.Point(99, 359);
             this.labelDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(111, 20);
+            this.labelDate.Size = new System.Drawing.Size(13, 20);
             this.labelDate.TabIndex = 19;
-            this.labelDate.Text = "by Jakub Łuka";
+            this.labelDate.Text = " ";
             // 
             // TodayDate
             // 

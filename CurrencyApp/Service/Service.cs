@@ -57,5 +57,6 @@ namespace CurrencyApp.Logic
             }
             return "Error";
         }
+        public string GetCurrentDate() => DateTime.Now.ToString("g");
     }
 }
